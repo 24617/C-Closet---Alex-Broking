@@ -3,8 +3,8 @@
 #include "Drawer.hpp"
 #include <vector>
 #include <float.h>
-#include <string>
 #include <cinttypes>
+#include <string>
 class Closet
 {
 public:
@@ -12,11 +12,11 @@ public:
 	~Closet();
 
 private:
-	std::vector<float> size = { 1,1,1 };
-	std::basic_string<char> color = "red";
-	std::vector<float> position = { 1,1,1 };
 	std::list<Drawer*> *drawers;
-	std::int64_t capacity = 20;
+	std::vector<float> size;
+	std::string color;
+	std::vector<float> position;
+	std::int64_t capacity;
 	
 };
 

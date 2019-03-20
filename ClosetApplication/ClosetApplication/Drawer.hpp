@@ -11,7 +11,9 @@ public:
 	~Drawer();
 private:
 	std::list<Clothing*> *clothing;
-	std::vector<float> size = { 1,1,1 };
-	std::basic_string<char> color = "red";
+	std::vector<float> size;
+	std::string color;
+	std::vector<float> position;
+	std::int64_t capacity;
 };
 
